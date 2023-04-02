@@ -8,17 +8,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="navbar">
-    <a href="#" class="logo">OPEN AI</a>
-    <div class="toggle"></div>
-      <nav>
-    <ul id="link">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#app">Poem Generation</a></li>
-    </ul>
-        <nav>
-  </header>
+     <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="./logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Guide</a>
+                    </li>
+                    <li>
+                        <a href="#app">Generate Poems</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
   <section id="hero">
     <h1 id="text">AI GENERATED POEMS</h1>
     <a href="#app" class="btn">Generate some poems!</a>
@@ -45,6 +63,12 @@
           navbar.style.top = "0";
         }
       });
-  </script>
+         <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
   </body>
 </html>
