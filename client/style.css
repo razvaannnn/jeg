@@ -9,7 +9,7 @@
 }
 
 body {
-  background: white;
+  background: #D3D0CB;
 }
 
 section {
@@ -88,7 +88,7 @@ nav ul li a:hover{
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  background: #111;
+  background: #1E2019;
 }
 
 .tabs label {
@@ -110,7 +110,7 @@ nav ul li a:hover{
   padding-top: 50px;
   padding-left: 380px;
   padding-right: 380px;
-  background: #fff;
+  background: #D3D0CB;
 }
 
 .tabs input[type=radio] {
@@ -118,8 +118,8 @@ nav ul li a:hover{
 }
 
 .tabs input[type=radio]:checked+label {
-  background: #fff;
-  color: #111;
+  background: #D3D0CB;
+  color: #1E2019;
 }
 
 .tabs input[type=radio]:checked+label+.tab {
@@ -144,14 +144,14 @@ nav ul li a:hover{
 .tabs .text{
     font-size: 30px;
     font-weight: 300;
-    color: white;
+    color: #D3D0CB;
 }
 
 
 #app {
   width: 100%;
   height: 100vh;
-  background: white;
+  background: #D3D0CB;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
