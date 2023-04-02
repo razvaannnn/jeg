@@ -91,6 +91,7 @@ section {
 }
 
 #text {
+  margin-right: 700px;
   position: relative;
   text-align: justify;
   justify-content: center;
