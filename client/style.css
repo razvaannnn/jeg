@@ -79,6 +79,68 @@ nav ul li a:hover{
   background-repeat: no-repeat;
 }
 
+#tab {
+  position: relative;
+}
+
+.tabs {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  background: #111;
+}
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: #fff;
+  background: #111;
+  font-size: clamp(30px, 1vw, 10px);
+  font-weight: bold;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding-top: 50px;
+  padding-left: 380px;
+  padding-right: 380px;
+  background: #fff;
+}
+
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs input[type=radio]:checked+label {
+  background: #fff;
+  color: #111;
+}
+
+.tabs input[type=radio]:checked+label+.tab {
+  display: block;
+}
+
+.tab p {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+.tab h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #111;
+}
+
 #app {
   width: 100%;
   height: 100vh;
@@ -182,7 +244,7 @@ nav ul li a:hover{
 
 form {
   width: 100%;
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 10px;
   background: #40414F;
