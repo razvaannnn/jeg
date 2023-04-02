@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #393E41;
+  background: white;
 }
 
 section {
@@ -145,7 +145,7 @@ nav ul li a:hover{
   width: 100%;
   height: 100vh;
   background: white;
-
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
