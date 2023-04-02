@@ -12,103 +12,7 @@ body {
   background: #353535;
 }
 
-header {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    background: #0b2239;
-}
-header .header-left {
-    display: flex;
-    align-items: center;
-}
-header .header-left .logo {
-    width: 140px;
-}
-header .header-left nav {
-    margin-left: 50px;
-}
-header .header-left nav ul {
-    display: flex;
-}
-nav ul li a {
-    display: block;
-    color: #cfd9e0;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.2s;
-}
-nav ul li a:hover,
-nav ul li a.active {
-    color: #fff;
-}
-nav .login-signup {
-    display: none;
-}
-header .header-right {
-    display: flex;
-    align-items: center;
-}
-header .login-signup {
-    color: #cfd9e0;
-    font-weight: bold;
-}
-header .login-signup a {
-    display: inline-block;
-    color: #0b2239;
-    background: #4ad295;
-    padding: 5px 12px;
-    border-radius: 5px;
-}
-header .header-right .hamburger {
-    margin-left: 20px;
-    cursor: pointer;
-    display: none;
-}
-header .header-right .hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background: #fff;
-}
-@media only screen and (max-width: 1000px) {
-    header {
-        padding: 0 20px;
-    }
-    header .header-right .hamburger {
-        display: block;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: #0b2239;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-    header .header-left nav.active {
-        top: 70px;
-    }
-    header .header-left nav ul {
-        display: block;
-    }
-}
-@media only screen and (max-width: 500px) {
-    nav .login-signup {
-        display: block;
-        margin-top: 20px;
-    }
-    header .header-right .login-signup {
-        display: none;
-    }
-}
+
 
 section {
   position: relative;
@@ -116,6 +20,100 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
 }
 
 #text {
