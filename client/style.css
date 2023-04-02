@@ -91,6 +91,10 @@ nav ul li a:hover{
   background: #1E2019;
 }
 
+element.style {
+    background: #1E2019;
+}
+
 .tabs label {
   order: 1;
   display: block;
