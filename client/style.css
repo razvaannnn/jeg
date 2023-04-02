@@ -96,8 +96,8 @@ nav ul li a:hover{
   display: block;
   padding: 1rem 2rem;
   cursor: pointer;
-  color: #fff;
-  background: #111;
+  color: #D3D0CB;
+  background: #1E2019;
   font-size: clamp(30px, 1vw, 10px);
   font-weight: bold;
 }
