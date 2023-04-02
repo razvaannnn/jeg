@@ -8,32 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-     <header>
-        <div class="header-left">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Guide</a>
-                    </li>
-                    <li>
-                        <a href="#app">Generate Poems</a>
-                  </li>
-                </ul>
-            </nav>
-        </div>
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </header>
+     <nav>
+      <div class="logo">Brand</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
   <section id="hero">
     <h1 id="text">AI GENERATED POEMS</h1>
     <a href="#app" class="btn">Generate some poems!</a>
@@ -60,12 +48,6 @@
           navbar.style.top = "0";
         }
       });
-         <script>
-        hamburger = document.querySelector(".hamburger");
-        nav = document.querySelector("nav");
-        hamburger.onclick = function() {
-            nav.classList.toggle("active");
-        }
     </script>
   </body>
 </html>
