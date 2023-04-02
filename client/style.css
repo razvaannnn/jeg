@@ -172,8 +172,8 @@ element.style {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-top-right-radius: 5%;
-  border-top-left-radius: 5%;
+  border-top-right-radius: 3%;
+  border-top-left-radius: 3%;
   -ms-overflow-style: none;
   scrollbar-width: none;
 
