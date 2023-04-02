@@ -71,7 +71,7 @@ nav ul li a:hover{
 
 #hero {
   width: 100%;
-  height: auto;
+  height: 1000px;
   overflow: hidden;
   position: relative;
   background-image: url(assets/bg.jpg);
