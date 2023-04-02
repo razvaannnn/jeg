@@ -91,14 +91,14 @@ section {
 }
 
 #text {
-  margin-right: 700px;
-  position: relative;
-  text-align: justify;
-  justify-content: center;
-  margin-bottom: 620px;
-  color: aquamarine;
-  font-size: 9em;
-  font-size: clamp(30px, 8vw, 100px);
+    margin-right: 805px;
+    position: relative;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 635px;
+    color: #7fffd4;
+    font-size: 9em;
+    font-size: clamp(30px,8vw,100px);
 }
 
 #hero {
@@ -113,23 +113,22 @@ section {
 }
 
 .btn {
-  position: absolute;
-  display: inline-block;
-  background: #111;
-  color: rgb(255, 255, 255);
-  border: 2px solid #111;
-  border-radius: 30px;
-  margin-right: 700px;
-  margin-bottom: 380px;
-  padding: 10px 30px;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-size: clamp(10px, 2vw, 18px);
+    position: absolute;
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    border: 2px solid #111;
+    border-radius: 30px;
+    margin-right: 1459px;
+    margin-bottom: 462px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: clamp(10px,2vw,18px);
 }
-
 .btn:hover {
   border: 2px solid #111;
   color: #111;
